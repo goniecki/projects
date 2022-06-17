@@ -1,0 +1,11 @@
+number_of_tasks = int(input())
+summary = 1
+for n in range(number_of_tasks):
+    number = int(input())
+    for i in range(number):
+        summary = summary * number
+        number = number - 1
+        if number == 1:
+            print(summary)
+            break
+
